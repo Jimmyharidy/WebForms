@@ -9,6 +9,10 @@ namespace Webforms
 {
     public partial class Calculator : System.Web.UI.Page
     {
+        public double tal1 = -1;
+        public double tal2 = -1;
+        public bool flag = false;
+        public string operand = string.Empty;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -71,19 +75,30 @@ namespace Webforms
 
         protected void ButtonPlus_Click(object sender, EventArgs e)
         {
-            double tal1;
-            double.TryParse(TextBox1.Text, out tal1);
+           
+            double.TryParse(TextBox1.Text, out tal1);            
             TextBox1.Text = string.Empty;
-
-             
+            flag = true;
+            operand = "+";
+        
         }
 
         protected void ButtonEquals_Click(object sender, EventArgs e)
         {
-            double tal2;
-            double.TryParse(TextBox1.Text, out tal2);
-            bool  
-            
+           
+           double.TryParse(TextBox1.Text, out tal2);
+           if(flag && tal2 >= 0)
+            { 
+                switch (operand)
+                {
+                    case "+":
+                        TextBox1.Text = (tal1 + tal2).ToString();
+                        break;
+                    default:
+                        Label1.Text = "Please enter a valid input.";
+                        break;
+                }
+            }
         }
     }
 }
