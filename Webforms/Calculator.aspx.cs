@@ -125,15 +125,20 @@ namespace Webforms
                         result = (tal1*tal2);
                         TextBox1.Text = result.ToString();
                         break;
+                    case "/":
                         result = (tal1/tal2);
                         TextBox1.Text = result.ToString();
+                        break;
                     default:
-                        TextBox1.Text = "Not a valid input, only numbers is valid!";
+                        TextBox1.Text = "Not a valid input!";
                         break;
                 }
             }
         }
 
-
+        protected void ButtonClear_Click(object sender, EventArgs e)
+        {
+            TextBox1.Text = String.Empty;
+        }
     }
 }

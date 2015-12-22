@@ -28,10 +28,13 @@
         <asp:Button ID="ButtonMultiply" runat="server" Text="*" OnClick="ButtonMultiply_Click" />
         <br/>
         <asp:Button ID="Button" runat="server" Text="0" OnClick="Button_Click" />
-        <asp:Button ID="ButtonPoint" runat="server" Text="." OnClick="ButtonPoint_Click" style="width: 19px" />
+        <asp:Button ID="ButtonPoint" runat="server" Text="," OnClick="ButtonPoint_Click" style="width: 19px" />
         <asp:Button ID="ButtonDevide" runat="server" Text="/" OnClick="ButtonDevide_Click" />
         <asp:Button ID="ButtonEquals" runat="server" Text="=" OnClick="ButtonEquals_Click" />
+        <br/>
+        <asp:Button ID="ButtonClear" runat="server" Text="Clear" OnClick="ButtonClear_Click" />
     </div>
+        
        
     </form>
 </body>
