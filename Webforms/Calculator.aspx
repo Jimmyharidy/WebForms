@@ -20,16 +20,16 @@
         <asp:Button ID="Button4" runat="server" Text="4" OnClick="Button4_Click" />
         <asp:Button ID="Button5" runat="server" Text="5" OnClick="Button5_Click" />
         <asp:Button ID="Button6" runat="server" Text="6" OnClick="Button6_Click" />
-        <asp:Button ID="ButtonMinus" runat="server" Text="-" />
+        <asp:Button ID="ButtonMinus" runat="server" Text="-" OnClick="ButtonMinus_Click" />
         <br/>
         <asp:Button ID="Button7" runat="server" Text="7" OnClick="Button7_Click" />
         <asp:Button ID="Button8" runat="server" Text="8" OnClick="Button8_Click" />
         <asp:Button ID="Button9" runat="server" Text="9" OnClick="Button9_Click" />
-        <asp:Button ID="ButtonMultiply" runat="server" Text="*" />
+        <asp:Button ID="ButtonMultiply" runat="server" Text="*" OnClick="ButtonMultiply_Click" />
         <br/>
         <asp:Button ID="Button" runat="server" Text="0" OnClick="Button_Click" />
         <asp:Button ID="ButtonPoint" runat="server" Text="." OnClick="ButtonPoint_Click" style="width: 19px" />
-        <asp:Button ID="ButtonDevide" runat="server" Text="/" />
+        <asp:Button ID="ButtonDevide" runat="server" Text="/" OnClick="ButtonDevide_Click" />
         <asp:Button ID="ButtonEquals" runat="server" Text="=" OnClick="ButtonEquals_Click" />
     </div>
        

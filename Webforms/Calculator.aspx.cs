@@ -9,10 +9,11 @@ namespace Webforms
 {
     public partial class Calculator : System.Web.UI.Page
     {
-        public double tal1 = -1;
-        public double tal2 = -1;
-        public bool flag = false;
-        public string operand = string.Empty;
+        public static double tal1 = -1;
+        public static double tal2 = -1;
+        public static bool flag = false;
+        public static string operand = string.Empty;
+        public static double result = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -75,30 +76,64 @@ namespace Webforms
 
         protected void ButtonPlus_Click(object sender, EventArgs e)
         {
-           
-            double.TryParse(TextBox1.Text, out tal1);            
+
+            double.TryParse(TextBox1.Text, out tal1);
             TextBox1.Text = string.Empty;
             flag = true;
             operand = "+";
-        
-        }
 
+
+        }
+        protected void ButtonMinus_Click(object sender, EventArgs e)
+        {
+            double.TryParse(TextBox1.Text, out tal1);
+            TextBox1.Text = string.Empty;
+            flag = true;
+            operand = "-";
+        }
+        protected void ButtonMultiply_Click(object sender, EventArgs e)
+        {
+            double.TryParse(TextBox1.Text, out tal1);
+            TextBox1.Text = string.Empty;
+            flag = true;
+            operand = "*";
+        }
+        protected void ButtonDevide_Click(object sender, EventArgs e)
+        {
+            double.TryParse(TextBox1.Text, out tal1);
+            TextBox1.Text = string.Empty;
+            flag = true;
+            operand = "/";
+        }
         protected void ButtonEquals_Click(object sender, EventArgs e)
         {
-           
-           double.TryParse(TextBox1.Text, out tal2);
-           if(flag && tal2 >= 0)
-            { 
+
+            double.TryParse(TextBox1.Text, out tal2);
+            if (flag && tal2 >= 0)
+            {
                 switch (operand)
                 {
                     case "+":
-                        TextBox1.Text = (tal1 + tal2).ToString();
+                        result = (tal1 + tal2);
+                        TextBox1.Text = result.ToString();
                         break;
+                    case "-":
+                        result = (tal1 - tal2);
+                        TextBox1.Text = result.ToString();
+                        break;
+                    case "*":
+                        result = (tal1*tal2);
+                        TextBox1.Text = result.ToString();
+                        break;
+                        result = (tal1/tal2);
+                        TextBox1.Text = result.ToString();
                     default:
-                        Label1.Text = "Please enter a valid input.";
+                        TextBox1.Text = "Not a valid input, only numbers is valid!";
                         break;
                 }
             }
         }
+
+
     }
 }
