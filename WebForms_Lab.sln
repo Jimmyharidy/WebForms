@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OvningarWebForms", "OvningarWebForms\OvningarWebForms.csproj", "{060C4C77-7F4D-41A2-9D09-FD3BED257234}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uppgift1", "..\WebFormsUppgift1\Uppgift1\Uppgift1.csproj", "{298C720A-9C45-4B53-A408-1DDCCA0C6CEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebformsUppgift2", "..\WebformsUppgift2\WebformsUppgift2\WebformsUppgift2.csproj", "{B49B4F9C-864A-49DA-A3E8-5243B0CFFA3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{060C4C77-7F4D-41A2-9D09-FD3BED257234}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{060C4C77-7F4D-41A2-9D09-FD3BED257234}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{060C4C77-7F4D-41A2-9D09-FD3BED257234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{298C720A-9C45-4B53-A408-1DDCCA0C6CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298C720A-9C45-4B53-A408-1DDCCA0C6CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298C720A-9C45-4B53-A408-1DDCCA0C6CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{298C720A-9C45-4B53-A408-1DDCCA0C6CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49B4F9C-864A-49DA-A3E8-5243B0CFFA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49B4F9C-864A-49DA-A3E8-5243B0CFFA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49B4F9C-864A-49DA-A3E8-5243B0CFFA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49B4F9C-864A-49DA-A3E8-5243B0CFFA3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
