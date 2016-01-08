@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uppgift1", "..\WebFormsUppg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebformsUppgift2", "..\WebformsUppgift2\WebformsUppgift2\WebformsUppgift2.csproj", "{B49B4F9C-864A-49DA-A3E8-5243B0CFFA3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ovning", "Ovning\Ovning.csproj", "{D5C2E8DB-3013-4ECC-86FC-D723A05571A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{B49B4F9C-864A-49DA-A3E8-5243B0CFFA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B49B4F9C-864A-49DA-A3E8-5243B0CFFA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B49B4F9C-864A-49DA-A3E8-5243B0CFFA3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5C2E8DB-3013-4ECC-86FC-D723A05571A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C2E8DB-3013-4ECC-86FC-D723A05571A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C2E8DB-3013-4ECC-86FC-D723A05571A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C2E8DB-3013-4ECC-86FC-D723A05571A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
